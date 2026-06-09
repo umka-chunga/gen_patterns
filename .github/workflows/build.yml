@@ -20,7 +20,7 @@ jobs:
         run: npm install
 
       - name: Generate DOCX
-        run: node generate.js
+        run: node gen_patterns.js
 
       - name: Upload DOCX
         uses: actions/upload-artifact@v4
