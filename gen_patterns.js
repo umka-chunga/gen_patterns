@@ -2487,6 +2487,6 @@ function buildDoc() {
 }
 
 Packer.toBuffer(buildDoc()).then(buf => {
-  fs.writeFileSync("/mnt/user-data/outputs/design_patterns_ua.docx", buf);
+  fs.writeFileSync("design_patterns_ua.docx", buf);
   console.log("Done!");
 }).catch(console.error);
